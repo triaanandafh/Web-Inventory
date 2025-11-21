@@ -84,7 +84,7 @@ class CategoryController {
         $id   = intval($_POST['id'] ?? 0);
         $name = trim($_POST['nama_kategori'] ?? '');
         $code = trim($_POST['kode_kategori'] ?? '');
-        $desc = trim($_POST['deskripsi'] ?? '');
+        // $desc = trim($_POST['deskripsi'] ?? '');
 
         $errors = [];
         if ($id <= 0) $errors[] = 'ID kategori tidak valid.';
